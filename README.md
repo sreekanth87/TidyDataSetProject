@@ -3,15 +3,15 @@ First, the code reads data files from the working directory and stores the data 
 
 Second, the rows of test data is combined to the train data using rbind() function for activity, subject, and feature datesets. This results in a total of 3 datasets -- Subjectdata, Activitydata, and Featuredata
 
-Third, the columns are labeled. For subject data, 
+Third, the columns are labeled. Faeture names are read from the feastures.txt file and assigned to the respective column names in the main dataset. 
 
 Fourth, all the columns from the 3 datasets are combined using cbind() function. This results in one data set with 10299 rows and 563 columns.
 
-Fifth, the previously created dataset is subsetted to only have column names that include "mean()" or "std ()". This results in 10299x68 dataset
+Fifth, the previously created dataset is subsetted to only have column names that include "mean()" or "std ()" by using grep() and subset() functions. This results in 10299x68 dataset
 
 Sixth, the activity code numbers are replaced by descriptors. The activity names are read and stored from the activity_labels.txt file from the working directory. dplyr package is used to merge the acitivty names with the dataset.
 
-Seventh, using text editing features (gsub()), the abbreviated variable names are transformed into full names. 
+Seventh, using text editing function gsub(), the abbreviated variable names are transformed into full names. 
 
 Eigth, new data set is created using aggreagate function from dplyr package and means of all the variables are reported for each subject under each activity.
 
