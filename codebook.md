@@ -1,7 +1,11 @@
+Values of Varible -- Activity consist of data from “Y_train.txt” and “Y_test.txt”
+Values of Varible -- Subject consist of data from “subject_train.txt” and "subject_test.txt"
+Values of Varibles -- Features consist of data from “X_train.txt” and “X_test.txt”
+Names of Varibles -- Features come from “features.txt”
+Labels of Varibles -- Activity come from “activity_labels.txt”
 
 mean(): Mean value
 std(): Standard deviation
-
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -29,3 +33,5 @@ fBodyAccMag
 fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
+
+Source:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
